@@ -1,5 +1,6 @@
 # Fundamental Stock Prediction of the Iranian Stock Market
 Stock market prediction using fundamental features
+[ Kamran Abdi, **Hossein Rezaei**, Mohsen Hooshmand, “Machine Learning-based Fundamental Stock Prediction Using Companies’ Financial Reports,” 32nd International Conference on Electrical Engineering (ICEE), Tehran, Iran, 2024, Status: In press]
 
 ## Directory Structure
 
@@ -33,5 +34,3 @@ Finally, you should run the **"generating_all_results.ipynb"** file to aggregate
 Enjoy exploring the results!
 
 The dataset has been prepared by [Kamran Abdi](https://github.com/Rayan1392), and the implementation has been done by [Hossein Rezaei](https://github.com/HosseinRezaei951).
-
-[ Kamran Abdi, **Hossein Rezaei**, Mohsen Hooshmand, “Machine Learning-based Fundamental Stock Prediction Using Companies’ Financial Reports,” 32nd International Conference on Electrical Engineering (ICEE), Tehran, Iran, 2024, Status: In press]

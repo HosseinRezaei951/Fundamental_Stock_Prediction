@@ -1,0 +1,37 @@
+\begin{table}
+\centering
+\caption{Selected stock correlation and simple statistics.}
+\begin{tabular}{lllrrrrrr}
+\toprule
+ &  &  & Sp & Se & MCC & F1 & AUC-ROC & AUPR \\
+Method & Alg & Scaling &  &  &  &  &  &  \\
+\midrule
+\multirow[c]{8}{*}{Stat} & \multirow[c]{2}{*}{LR} & Standard & {\cellcolor[HTML]{963003}} \color[HTML]{F1F1F1} 85.68 & {\cellcolor[HTML]{9E3303}} \color[HTML]{F1F1F1} 77.94 & {\cellcolor[HTML]{EE6410}} \color[HTML]{F1F1F1} 55.75 & {\cellcolor[HTML]{7F2704}} \color[HTML]{F1F1F1} 85.34 & {\cellcolor[HTML]{8E2D04}} \color[HTML]{F1F1F1} 81.81 & {\cellcolor[HTML]{7F2704}} \color[HTML]{F1F1F1} 95.62 \\
+ &  & MinMax & {\cellcolor[HTML]{D34601}} \color[HTML]{F1F1F1} 82.55 & {\cellcolor[HTML]{892B04}} \color[HTML]{F1F1F1} 78.55 & {\cellcolor[HTML]{F57622}} \color[HTML]{F1F1F1} 54.21 & {\cellcolor[HTML]{7F2704}} \color[HTML]{F1F1F1} 85.34 & {\cellcolor[HTML]{B83C02}} \color[HTML]{F1F1F1} 80.55 & {\cellcolor[HTML]{902E04}} \color[HTML]{F1F1F1} 95.22 \\
+\cline{2-9}
+ & \multirow[c]{2}{*}{SVM} & Standard & {\cellcolor[HTML]{DE5005}} \color[HTML]{F1F1F1} 81.70 & {\cellcolor[HTML]{FDC088}} \color[HTML]{000000} 72.54 & {\cellcolor[HTML]{FDC997}} \color[HTML]{000000} 46.82 & {\cellcolor[HTML]{FDB77A}} \color[HTML]{000000} 81.18 & {\cellcolor[HTML]{FC8B3A}} \color[HTML]{F1F1F1} 77.12 & {\cellcolor[HTML]{BE3F02}} \color[HTML]{F1F1F1} 94.35 \\
+ &  & MinMax & {\cellcolor[HTML]{EE6511}} \color[HTML]{F1F1F1} 80.07 & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 69.68 & {\cellcolor[HTML]{FEEAD6}} \color[HTML]{000000} 42.43 & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 79.01 & {\cellcolor[HTML]{FDC590}} \color[HTML]{000000} 74.87 & {\cellcolor[HTML]{E15307}} \color[HTML]{F1F1F1} 93.64 \\
+\cline{2-9}
+ & \multirow[c]{2}{*}{RF} & Standard & {\cellcolor[HTML]{FD9F56}} \color[HTML]{000000} 76.04 & {\cellcolor[HTML]{FDAF6C}} \color[HTML]{000000} 73.12 & {\cellcolor[HTML]{FEE3C8}} \color[HTML]{000000} 43.66 & {\cellcolor[HTML]{FDCB9B}} \color[HTML]{000000} 80.70 & {\cellcolor[HTML]{FDCD9C}} \color[HTML]{000000} 74.58 & {\cellcolor[HTML]{E35608}} \color[HTML]{F1F1F1} 93.54 \\
+ &  & MinMax & {\cellcolor[HTML]{FD9E54}} \color[HTML]{000000} 76.06 & {\cellcolor[HTML]{FDB77A}} \color[HTML]{000000} 72.81 & {\cellcolor[HTML]{FEE5CC}} \color[HTML]{000000} 43.32 & {\cellcolor[HTML]{FDD3A9}} \color[HTML]{000000} 80.49 & {\cellcolor[HTML]{FDD0A2}} \color[HTML]{000000} 74.44 & {\cellcolor[HTML]{E5590A}} \color[HTML]{F1F1F1} 93.48 \\
+\cline{2-9}
+ & \multirow[c]{2}{*}{GB} & MinMax & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 67.59 & {\cellcolor[HTML]{E25508}} \color[HTML]{F1F1F1} 76.10 & {\cellcolor[HTML]{FFF5EA}} \color[HTML]{000000} 40.30 & {\cellcolor[HTML]{FDA965}} \color[HTML]{000000} 81.50 & {\cellcolor[HTML]{FFF5EA}} \color[HTML]{000000} 71.85 & {\cellcolor[HTML]{F16813}} \color[HTML]{F1F1F1} 93.06 \\
+ &  & Standard & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 67.53 & {\cellcolor[HTML]{E45709}} \color[HTML]{F1F1F1} 76.06 & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 40.17 & {\cellcolor[HTML]{FDAB66}} \color[HTML]{000000} 81.47 & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 71.80 & {\cellcolor[HTML]{F16913}} \color[HTML]{F1F1F1} 93.04 \\
+\cline{1-9} \cline{2-9}
+\multirow[c]{8}{*}{Conv} & SVM & MinMax & {\cellcolor[HTML]{7F2704}} \color[HTML]{F1F1F1} 87.16 & {\cellcolor[HTML]{B03903}} \color[HTML]{F1F1F1} 77.48 & {\cellcolor[HTML]{7F2704}} \color[HTML]{F1F1F1} 64.45 & {\cellcolor[HTML]{F87D29}} \color[HTML]{F1F1F1} 82.54 & {\cellcolor[HTML]{7F2704}} \color[HTML]{F1F1F1} 82.32 & {\cellcolor[HTML]{FEEBD7}} \color[HTML]{000000} 89.39 \\
+\cline{2-9}
+ & \multirow[c]{2}{*}{GB} & MinMax & {\cellcolor[HTML]{9E3303}} \color[HTML]{F1F1F1} 85.24 & {\cellcolor[HTML]{802704}} \color[HTML]{F1F1F1} 78.82 & {\cellcolor[HTML]{852904}} \color[HTML]{F1F1F1} 63.93 & {\cellcolor[HTML]{F5741F}} \color[HTML]{F1F1F1} 82.72 & {\cellcolor[HTML]{882A04}} \color[HTML]{F1F1F1} 82.03 & {\cellcolor[HTML]{FFF0E2}} \color[HTML]{000000} 89.07 \\
+ &  & Standard & {\cellcolor[HTML]{9E3303}} \color[HTML]{F1F1F1} 85.20 & {\cellcolor[HTML]{7F2704}} \color[HTML]{F1F1F1} 78.86 & {\cellcolor[HTML]{852904}} \color[HTML]{F1F1F1} 63.93 & {\cellcolor[HTML]{F5741F}} \color[HTML]{F1F1F1} 82.73 & {\cellcolor[HTML]{882A04}} \color[HTML]{F1F1F1} 82.03 & {\cellcolor[HTML]{FFF0E2}} \color[HTML]{000000} 89.06 \\
+\cline{2-9}
+ & SVM & Standard & {\cellcolor[HTML]{952F03}} \color[HTML]{F1F1F1} 85.77 & {\cellcolor[HTML]{9E3303}} \color[HTML]{F1F1F1} 77.95 & {\cellcolor[HTML]{8B2C04}} \color[HTML]{F1F1F1} 63.48 & {\cellcolor[HTML]{FA8532}} \color[HTML]{F1F1F1} 82.36 & {\cellcolor[HTML]{8C2C04}} \color[HTML]{F1F1F1} 81.86 & {\cellcolor[HTML]{FFF3E6}} \color[HTML]{000000} 88.94 \\
+\cline{2-9}
+ & LR & Standard & {\cellcolor[HTML]{973003}} \color[HTML]{F1F1F1} 85.60 & {\cellcolor[HTML]{A93703}} \color[HTML]{F1F1F1} 77.64 & {\cellcolor[HTML]{902E04}} \color[HTML]{F1F1F1} 63.03 & {\cellcolor[HTML]{FD9040}} \color[HTML]{000000} 82.11 & {\cellcolor[HTML]{942F03}} \color[HTML]{F1F1F1} 81.62 & {\cellcolor[HTML]{FFF5EA}} \color[HTML]{000000} 88.82 \\
+\cline{2-9}
+ & \multirow[c]{2}{*}{RF} & Standard & {\cellcolor[HTML]{9F3303}} \color[HTML]{F1F1F1} 85.09 & {\cellcolor[HTML]{8F2D04}} \color[HTML]{F1F1F1} 78.36 & {\cellcolor[HTML]{8E2D04}} \color[HTML]{F1F1F1} 63.26 & {\cellcolor[HTML]{FA8532}} \color[HTML]{F1F1F1} 82.37 & {\cellcolor[HTML]{902E04}} \color[HTML]{F1F1F1} 81.72 & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 88.81 \\
+ &  & MinMax & {\cellcolor[HTML]{A03403}} \color[HTML]{F1F1F1} 85.02 & {\cellcolor[HTML]{8F2D04}} \color[HTML]{F1F1F1} 78.37 & {\cellcolor[HTML]{8F2D04}} \color[HTML]{F1F1F1} 63.19 & {\cellcolor[HTML]{FA8532}} \color[HTML]{F1F1F1} 82.35 & {\cellcolor[HTML]{912E04}} \color[HTML]{F1F1F1} 81.69 & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 88.79 \\
+\cline{2-9}
+ & LR & MinMax & {\cellcolor[HTML]{8C2C04}} \color[HTML]{F1F1F1} 86.26 & {\cellcolor[HTML]{D54601}} \color[HTML]{F1F1F1} 76.64 & {\cellcolor[HTML]{952F03}} \color[HTML]{F1F1F1} 62.73 & {\cellcolor[HTML]{FDA159}} \color[HTML]{000000} 81.70 & {\cellcolor[HTML]{993103}} \color[HTML]{F1F1F1} 81.45 & {\cellcolor[HTML]{FFF5EB}} \color[HTML]{000000} 88.79 \\
+\cline{1-9} \cline{2-9}
+\bottomrule
+\end{tabular}
+\end{table}
